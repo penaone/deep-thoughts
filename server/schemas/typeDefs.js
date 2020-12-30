@@ -29,7 +29,7 @@ const typeDefs = gql`
   type Auth {
     token: ID!
     user: User
-    }
+  }
 
   type Query {
     me: User
@@ -46,7 +46,6 @@ const typeDefs = gql`
     addReaction(thoughtId: ID!, reactionBody: String!): Thought
     addFriend(friendId: ID!): User
   }
-
 `;
 
 module.exports = typeDefs;
